@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   <title>Encuesta</title> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="Proyecto.css" rel="stylesheet" type="text/css">
+    <link href="otra_pagg.html" type="text/html">
+    <script src="http://code.jquery.com/jquery.js"></script>
+</head
+main>
+<section id = "FormatoCabecera">
+    
+        <h1  id="titulo" onclick="myFunction()">Test de musica</h1>
+        <img id="titulo1" onclick="myFunction2()" style="padding-top: 30px;" src="images.jpg" width="300" height="200">
+        <br>
+     <script>
+                function myFunction() {
+                  document.getElementById("titulo").innerHTML = "Felicidades, encontraste el extra!";
+                }
+     </script>
+    </section> 
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div><br><h2 id = "subtitulo">¡Descubre nueva musica!</h2></div>
+
+<section id = "all">
+<br>               
+<body>
+    <section id = "all1">
+    <div id="Todo"></div>
+<br>
+    <script>
+        var preguntas = [
+        "1.- ¿Cuando te invitan a un lugar nuevo con personas extrañas como te sientes?",
+        "2.-¿En que lugar prefieres escuchar música?",
+        "3.-¿Que te gusta hacer en tus tiempos de ocio?",
+        "4.-Elige uno de los siguientes Colores",
+        "5.-¿Normalmente sueles iniciar las conversaciones?",
+        "6.-¿La mayor parte del tiempo como prefieres estar?",
+        "7.-¿Como te gusta vestirte?",
+        "8.-¿Se te dificulta ver tus defectos?",
+        "9.-¿En una discusión que sueles hacer?",
+        "Nota: Esta es una pregunta autovalorativa de usted mismo<br>10.-¿Como describirias tu manera de Ser?"           
+        ]; 
+        var respuestas = [
+        " Emocionado de conocer nuevas personas"," Privado por temor a que no sean lo que tu esperaba",
+        " Actuas de manera proactiva, puesto que te encanta conocer nuevas personas"," Te mantienes aislado de cualquier contacto",
+        " Decides no ir y realizar otras activades en su lugar",
+        " En tu casa con tu familia"," En tu cuarto", " Con amigos"," En una fiesta", 
+        " Un lugar apartado donde te puedas relajar (Un Parque)",
+        " Dormir", " Jugar", " Leer"," Salir con amigos"," Ninguna de las anteriores",
+        " Verde"," Rojo"," Azul"," Negro"," Otro",
+        " Siempre"," Nunca"," Aveces", " Casi siempre"," Casi nunca",
+        " Solo"," Con amigos"," Con la familia"," Con gente nueva"," Con mascotas",
+        " De negro", " De gala", " Siempre estar con un sueter", " De manera deportiva"," Con poca ropa" ,
+        " NO se me dificulta", " Se me dificulta Poco", " Se me dificulta Mucho", " No tengo Defectos", " No he pensado en ello",
+        " Actuar de manera tranquila"," No sueles contestar nada"," Te dejas llevar por tus emociones",
+        " Alzas más la voz para imponerte", " Solo aceptas y callas",
+        " Alegre"," Melancolico", " Serio"," Timido"," Otro"
+        ];
+        var txt_respuestas = "";
+        var txt_respuestas1 = ["","","","","","","","","",""];
+        var z=0;
+        var i1=0;
+        var c=0;  
+        for (i=0; i < 50; i1++){
+            if (z==6){c++;}
+                if (c==0){
+                    for (z=1; z < 6; z++) {
+                        txt_respuestas1[c] += '</label>'+'<input type="radio" name="p1" value="'+z+'"><label>'+
+                        respuestas[i]+'</label><br>';
+                    i++;}}
+                else
+                    if (c==1){
+                        for (z=1; z < 6; z++) {
+                            txt_respuestas1[c] += '<input type="radio" name="p2" value= "'+z+'"><label>'+
+                            respuestas[i]+'</label><br>';
+                    i++;}}
+                else
+                    if (c==2){
+                        for (z=1; z < 6; z++) {
+                            txt_respuestas1[c] += '<input type="radio" name="p3" value= "'+z+'"><label>'+
+                            respuestas[i]+'</label><br>';
+                    i++;}}
+                else
+                    if (c==3){
+                        for (z=1; z < 6; z++) {
+                            txt_respuestas1[c] += '<input type="radio" name="p4"value= "'+z+'"><label>'+
+                            respuestas[i]+'</label><br>';
+                    i++;}}
+                else
+                    if (c==4){
+                        for (z=1; z < 6; z++) {
+                            txt_respuestas1[c] += '<input type="radio" name="p5" value= "'+z+'"><label>'+
+                            respuestas[i]+'</label><br>';
+                    i++;}}
+                else
+                    if (c==5){
+                        for (z=1; z < 6; z++) {
+                            txt_respuestas1[c] += '<input type="radio" name="p6"value= "'+z+'"><label>'+
+                            respuestas[i]+'</label><br>';
+                    i++;}}
+                else
+                    if (c==6){
+                        for (z=1; z < 6; z++) {
+                            txt_respuestas1[c] += '<input type="radio" name="p7" value= "'+z+'"><label>'+
+                            respuestas[i]+'</label><br>';
+                    i++;}}
+                else
+                    if (c==7){
+                        for (z=1; z < 6; z++) {
+                            txt_respuestas1[c] += '<input type="radio" name="p8"value= "'+z+'"><label>'+
+                            respuestas[i]+'</label><br>';
+                    i++;}}
+                else
+                    if (c==8){
+                        for (z=1; z < 6; z++) {
+                            txt_respuestas1[c] += '<input type="radio" name="p9" value= "'+z+'"><label>'+
+                            respuestas[i]+'</label><br>';
+                    i++;}}
+                else
+                    if (c==9){
+                        for (z=1; z < 6; z++){
+                            txt_respuestas1[c] += '<input type="radio" name="p10"value= "'+z+'"><label>'+
+                            respuestas[i]+'</label><br>';
+                    i++;}}
+        }      
+        for (i=0; i < 10; i++){
+                txt_respuestas += '<label>'+preguntas[i]+'</label><br>'+'<label>'+txt_respuestas1[i]+'</label><br><br>';
+        }
+        document.getElementById("Todo").innerHTML = txt_respuestas;
+        var s=0;
+        var h=0;
+        function Comprobar(){
+            s=0;
+            document.getElementById("pagina").innerHTML = "";
+            document.getElementById("pagina1").innerHTML = "";
+            document.getElementById("pagina2").innerHTML = "";
+            document.getElementById("pagina3").innerHTML = "";
+            document.getElementById("pagina4").innerHTML = "";
+        if ($("input[name=p1]:checked").val()>0){
+         if ($("input[name=p2]:checked").val()>0){
+          if ($("input[name=p3]:checked").val()>0){
+           if ($("input[name=p4]:checked").val()>0){
+            if ($("input[name=p5]:checked").val()>0){
+             if ($("input[name=p6]:checked").val()>0){
+              if ($("input[name=p7]:checked").val()>0){
+               if ($("input[name=p8]:checked").val()>0){
+                if ($("input[name=p9]:checked").val()>0){
+                 if ($("input[name=p10]:checked").val()>0){
+                  var respuesta = [$("input[name=p1]:checked").val(),$("input[name=p2]:checked").val(),$("input[name=p3]:checked").val(),
+                  $("input[name=p4]:checked").val(),$("input[name=p5]:checked").val(),$("input[name=p6]:checked").val(),
+                  $("input[name=p7]:checked").val(),$("input[name=p8]:checked").val(),$("input[name=p9]:checked").val(),
+                  $("input[name=p10]:checked").val()]
+                  for (h = 0; h < 10; h++) {
+                    if (respuesta[h]==1) s++;
+                    else if (respuesta[h]==2) s+=2;
+                    else if (respuesta[h]==3) s+=3;
+                    else if (respuesta[h]==4) s+=4;
+                    else if (respuesta[h]==5) s+=5;}
+                  if (s>0&&s<13)
+                    document.getElementById("pagina").innerHTML = '<img src="images2.jpg" width="100" height="50"/><br><label>Link Hacia La Lista De Musica</label>';
+                  else if (s>12&&s<16)
+                    document.getElementById("pagina1").innerHTML = '<img src="images2.jpg" width="100" height="50"/><br><label>Link Hacia La Lista De Musica</label>';
+                  else if (s>15&&s<21)
+                    document.getElementById("pagina2").innerHTML = '<img src="images2.jpg" width="100" height="50"/><br><label>Link Hacia La Lista De Musica</label>';
+                  else if (s>20&&s<25)
+                    document.getElementById("pagina3").innerHTML = '<img src="images2.jpg" width="100" height="50"/><br><label>Link Hacia La Lista De Musica</label>';
+                  else if (s>24&&s<28)
+                    document.getElementById("pagina4").innerHTML = '<img src="images2.jpg" width="100" height="50"/><br><label>Link Hacia La Lista De Musica</label>';
+                  else if (s>27&&s<33)
+                    document.getElementById("pagina5").innerHTML = '<img src="images2.jpg" width="100" height="50"/><br><label>Link Hacia La Lista De Musica</label>';
+                  else if (s>32&&s<38)
+                    document.getElementById("pagina6").innerHTML = '<img src="images2.jpg" width="100" height="50"/><br><label>Link Hacia La Lista De Musica</label>';
+                  else if (s>37&&s<42)
+                    document.getElementById("pagina7").innerHTML = '<img src="images2.jpg" width="100" height="50"/><br><label>Link Hacia La Lista De Musica</label>';
+                  else if (s>41&&s<46)
+                    document.getElementById("pagina8").innerHTML = '<img src="images2.jpg" width="100" height="50"/><br><label>Link Hacia La Lista De Musica</label>';
+                  else if (s>45&&s<51)
+                    document.getElementById("pagina9").innerHTML = '<img src="images2.jpg" width="100" height="50""/><br><label>Link Hacia La Lista De Musica</label>';
+                 }else alert("No ha rellenado el campo (10)");
+                }else alert("No ha rellenado el campo (9)");
+               }else alert("No ha rellenado el campo (8)");
+              }else alert("No ha rellenado el campo (7)");
+             }else alert("No ha rellenado el campo (6)");
+            }else alert("No ha rellenado el campo (5)");
+           }else alert("No ha rellenado el campo (4)");
+          }else alert("No ha rellenado el campo (3)");
+         }else alert("No ha rellenado el campo (2)");
+        }else alert("No ha rellenado el campo (1)");
+    }
+    </script>
+    <br><br>
+    </section>
+</section> 
+<section id="biblio">
+        <input type="button" value="Generar Lista" onclick="Comprobar()">
+        <br>
+        <br>
+        <a href="Val__1.1.html" id="pagina" ></a>
+        <a href="Val__1.2.html" id="pagina1"></a>
+        <a href="Val__2.1.html" id="pagina2"></a>
+        <a href="Val__2.2.html" id="pagina3"></a>
+        <a href="Val__3.1.html" id="pagina4"></a>
+        <a href="Val__3.2.html" id="pagina5" ></a>
+        <a href="Val__4.1.html" id="pagina6"></a>
+        <a href="Val__4.2.html" id="pagina7"></a>
+        <a href="Val__5.1.html" id="pagina8"></a>
+        <a href="Val__5.2.html" id="pagina9"></a>
+</section>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</main>
+</body>
+</html>
